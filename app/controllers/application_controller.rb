@@ -21,8 +21,6 @@ class ApplicationController < Sinatra::Base
 		
 		if user.save 
 		  redirect "/login"
-		elsif params[:username] == nil
-		  redirect "/failure"
 		else
 		  redirect "/failure"
 		end
